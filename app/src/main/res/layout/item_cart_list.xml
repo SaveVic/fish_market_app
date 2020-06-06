@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:elevation="7dp"
+    android:layout_margin="7dp"
+    app:cardCornerRadius="6dp"
+    android:id="@+id/cart_card_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/idLinearLayoutProductImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:id="@+id/item_cart_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@id/idLinearLayoutProductImage"
+            android:id="@+id/idTopLayout">
+
+            <TextView
+                android:id="@+id/item_cart_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="25sp"
+                tools:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/idBottomLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@id/idLinearLayoutProductImage"
+            android:layout_below="@+id/idTopLayout">
+
+            <TextView
+                android:id="@+id/item_cart_price"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="price"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:textColor="@android:color/black"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/item_weight"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center_vertical|center_horizontal"-->
+<!--                android:text="weight"-->
+<!--                android:textSize="15dp"-->
+<!--                android:textStyle="bold"-->
+<!--                tools:textColor="@android:color/black" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/idLinearLayoutAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/idBottomLayout"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+            <TextView
+                android:id="@+id/item_cart_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x10"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:src="@drawable/item_add"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

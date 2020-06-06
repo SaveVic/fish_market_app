@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ppl.asn.fishmarket.ui.home.HomeFragment"
+        android:label="Fish Market"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_cart"
+            app:destination="@id/nav_cart" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="ppl.asn.fishmarket.ui.profile.ProfileFragment"
+        android:label="@string/menu_edit_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="ppl.asn.fishmarket.ui.setting.SettingFragment"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_transaction"
+        android:name="ppl.asn.fishmarket.ui.transaction.TransactionFragment"
+        android:label="@string/menu_transaction"
+        tools:layout="@layout/fragment_transaction" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="ppl.asn.fishmarket.ui.cart.CartFragment"
+        android:label="Keranjang"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_cart_to_checkout"
+            app:destination="@id/nav_checkout" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_checkout"
+        android:name="ppl.asn.fishmarket.ui.checkout.CheckoutFragment"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_checkout"/>
+
+</navigation>

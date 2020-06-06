@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "79915320408",
+    "firebase_url": "https://ppl-asn.firebaseio.com",
+    "project_id": "ppl-asn",
+    "storage_bucket": "ppl-asn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79915320408:android:b837bb9dcd65e003da362d",
+        "android_client_info": {
+          "package_name": "ppl.asn.fishmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79915320408-oqbkjphf4p4ukeenhfj06ilg2c1ep9j8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtDCoja5y6Z4AZ_Dn_ZH5BtH0LpaWgvOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79915320408-oqbkjphf4p4ukeenhfj06ilg2c1ep9j8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
